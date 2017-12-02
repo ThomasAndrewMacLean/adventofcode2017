@@ -1,4 +1,4 @@
-describe("Player", function () {
+describe("Day1", function () {
     // import CaptchaSolver from 'day1a'
     var CaptchaSolver = require('../../day1/CaptchaSolver.js')
 
@@ -20,7 +20,6 @@ describe("Player", function () {
     it("length function should give length of inputstring", function () {
         expect(captchaSolver.lengteIs()).toBe(6);
     });
-
 
     it("loopover should go over each char of string", function () {
         captchaSolver.loopOver();
