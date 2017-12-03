@@ -1,3 +1,5 @@
+module.exports = 
+
 class CaptchaSolver {
     constructor(inputString) {
         this.inputString = inputString;
@@ -29,7 +31,7 @@ class CaptchaSolver {
     loopOver2() {
         let result = 0;
         this.counter = 0;
-        const plus = this.lengteIs()/2;
+        const plus = this.lengteIs() / 2;
         for (let letter of this.inputString) {
 
             if (letter === this.inputString[(this.counter + plus) % this.lengteIs()]) {
@@ -44,4 +46,3 @@ class CaptchaSolver {
     }
 
 }
-module.exports = CaptchaSolver;
