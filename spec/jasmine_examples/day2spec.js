@@ -1,6 +1,6 @@
 describe("Day2", function () {
     // import CaptchaSolver from 'day1a'
-    var CheckSum = require('../../day2/day2a.js')
+    var CheckSum = require('../../day2/day2.js')
 
     var cs;
     var testData;

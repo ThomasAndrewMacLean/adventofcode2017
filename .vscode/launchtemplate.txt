@@ -7,7 +7,7 @@
         "type": "node",
         "request": "launch",
         "name": "Launch Program",
-        "program": "${workspaceFolder}/day3/day3.js"
+        [[replaceMe]]
        
     }]
 }

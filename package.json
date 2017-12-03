@@ -17,6 +17,11 @@
     "url": "https://github.com/ThomasAndrewMacLean/adventofcode2017/issues"
   },
   "homepage": "https://github.com/ThomasAndrewMacLean/adventofcode2017#readme",
+  "dependencies": {
+    "express": "latest",
+    "request": "latest",
+    "cheerio": "latest"
+  },
   "devDependencies": {
     "jasmine": "^2.8.0"
   }
