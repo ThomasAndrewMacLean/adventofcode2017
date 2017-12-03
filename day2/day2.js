@@ -1,4 +1,3 @@
-
 var fs = require('fs');
 const cont = fs.readFileSync('day2/input2a.txt', 'utf8');
 //console.log(cont)
@@ -23,13 +22,7 @@ class CheckSum {
     }
 
     getColumnsInRow(row) {
-        let numbers;
-        if (row.indexOf(' ') === -1) {
-            numbers = row.split('\t').map(Number);
-        } else {
-            numbers = row.split(' ').map(Number);
-        }
-        return numbers
+        return row.match(/\S+/g) || []
     }
 
     getHighestNumberInRow(row) {
