@@ -1,3 +1,4 @@
+
 var fs = require('fs');
 const cont = fs.readFileSync('day2/input2a.txt', 'utf8');
 //console.log(cont)
