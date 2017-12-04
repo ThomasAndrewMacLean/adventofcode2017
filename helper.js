@@ -63,7 +63,5 @@ rl.question('Set to day :', (dayNumber) => {
       })
     }
   })
-
-
   rl.close();
 });
