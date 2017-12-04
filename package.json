@@ -22,6 +22,6 @@
     "cheerio": "latest"
   },
   "devDependencies": {
-    "jasmine-core": "^2.8.0"
+    "jasmine": "^2.8.0"
   }
 }
