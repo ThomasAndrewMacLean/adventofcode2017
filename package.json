@@ -4,7 +4,7 @@
   "description": "advent of code 2017",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build && node --inspect-brk node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=jasmine.json"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
