@@ -2,7 +2,6 @@ var fs = require('fs');
 var cs = require('./CaptchaSolver.js');
 const cont = fs.readFileSync('day1/input1a.txt', 'utf8');
 
-
 var cs = new cs(cont);
 
 var answer1a = cs.loopOver();

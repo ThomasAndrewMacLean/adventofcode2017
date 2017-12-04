@@ -1,5 +1,3 @@
-module.exports = 
-
 class CaptchaSolver {
     constructor(inputString) {
         this.inputString = inputString;
@@ -46,3 +44,5 @@ class CaptchaSolver {
     }
 
 }
+
+module.exports = CaptchaSolver;
