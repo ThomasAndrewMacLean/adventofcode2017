@@ -1,4 +1,4 @@
-describe("Day4", function () {
+describe("Day5", function () {
     let Day5 = require('../../day5/day5.js')
 
     let inp =
@@ -17,28 +17,20 @@ describe("Day4", function () {
         expect(day5).toBeTruthy();
     });
 
-
-    it("getOut should be 5", function () {
-        let arr = day5.getArray(inp)
-
-        expect(day5.getOut(arr)).toBe(5);
-    });
-
     it("getArray gives an array", function () {
-
         expect(typeof (inp)).toBe('string');
-
-
         let arr = day5.getArray(inp)
-
         expect(typeof (arr)).toBe('object');
     });
 
-    // 0
-    // 3
-    // 0
-    // 1
-    // -3
+    it("getOut should be 5", function () {
+        let arr = day5.getArray(inp)
+        expect(day5.getOut(arr)).toBe(5);
+    });
 
+    it("getOutB should be 10", function () {
+        let arr = day5.getArray(inp)
+        expect(day5.getOutB(arr)).toBe(10);
+    });
 
 });

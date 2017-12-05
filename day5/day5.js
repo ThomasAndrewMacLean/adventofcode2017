@@ -1,7 +1,7 @@
 var fs = require('fs');
-const input = fs.readFileSync('day5/input5.txt', 'utf8');
+const inputPuzzle = fs.readFileSync('day5/input5.txt', 'utf8');
 
-let counter = 0;
+
 class Day5 {
 
 
@@ -9,15 +9,34 @@ class Day5 {
     getOut(arr) {
         let pos = 0;
 
+        let counter = 0;
 
-        while (pos <= arr.length) {
-            let temp = arr[pos];
-            arr[pos]=arr[pos] + 1;
-            pos += temp
-            counter++
+        while (pos < arr.length) {
+            let temp = pos;
+            pos += arr[pos];
+            arr[temp] = arr[temp] + 1;
+            counter++;
         }
+        return counter;
+    }
 
 
+    getOutB(arr) {
+        let pos = 0;
+        let offset = 0;
+        let counter = 0;
+        while (pos < arr.length) {
+            let temp = pos;
+            pos += arr[pos];
+            offset = arr[temp];
+           if(offset >= 3){
+            arr[temp] = arr[temp] - 1;
+           }else{
+               arr[temp] = arr[temp] + 1;
+           }
+
+            counter++;
+        }
         return counter;
     }
 
@@ -28,23 +47,23 @@ class Day5 {
         arr.forEach(e => {
             res.push(parseInt(e));
         });
-        console.log(res)
+
         return res;
     }
 
 }
 
-let d = new Day5();
-
 let inp =
-    `0
+`0
 3
 0
 1
 -3`
+let d = new Day5();
 
-let arr = d.getArray(inp)
+let ar = d.getArray(inputPuzzle)
 
-d.getOut(arr)
+let counter = d.getOutB(ar)
+console.log(counter)
 
 module.exports = Day5;
