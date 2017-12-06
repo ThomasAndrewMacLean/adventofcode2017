@@ -86,13 +86,13 @@ function sortNumber(a, b) {
     return a - b;
 }
 
-const cs = new CheckSum();
+// const cs = new CheckSum();
 
-cs.setData(cont);
-var resulta = cs.getCheckSum();
-var resultb = cs.getCheckSum2();
+// cs.setData(cont);
+// var resulta = cs.getCheckSum();
+// var resultb = cs.getCheckSum2();
 
-console.log('answer a: ' + resulta);
-console.log('answer b: ' + resultb);
+// console.log('answer a: ' + resulta);
+// console.log('answer b: ' + resultb);
 
 module.exports = CheckSum;

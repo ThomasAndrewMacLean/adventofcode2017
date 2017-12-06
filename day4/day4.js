@@ -22,21 +22,21 @@ class Validizer {
     }
 }
 
-let v = new Validizer();
-let counterA = 0;
-let counterB = 0;
-let lines = input.split('\n');
-lines.forEach(l => {
-    if (v.check(l)) {
-        counterA++;
-    }
-});
+// let v = new Validizer();
+// let counterA = 0;
+// let counterB = 0;
+// let lines = input.split('\n');
+// lines.forEach(l => {
+//     if (v.check(l)) {
+//         counterA++;
+//     }
+// });
 
-lines.forEach(l => {
-    if (v.checkB(l)) {
-        counterB++;
-    }
-});
+// lines.forEach(l => {
+//     if (v.checkB(l)) {
+//         counterB++;
+//     }
+// });
 
 
 //console.log(counterA);

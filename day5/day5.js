@@ -59,11 +59,11 @@ let inp =
 0
 1
 -3`
-let d = new Day5();
+// let d = new Day5();
 
-let ar = d.getArray(inputPuzzle)
+// let ar = d.getArray(inputPuzzle)
 
-let counter = d.getOutB(ar)
-console.log(counter)
+// let counter = d.getOutB(ar)
+// console.log(counter)
 
 module.exports = Day5;
