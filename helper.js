@@ -21,6 +21,7 @@ rl.question('Set to day :', (dayNumber) => {
 
   if (isNaN(dayNumber)) {
     console.log('\x1b[36m%s\x1b[0m', 'geen nummer');
+    return;
   }
 
   const dir = './day' + dayNumber;

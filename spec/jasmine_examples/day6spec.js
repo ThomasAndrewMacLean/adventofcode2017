@@ -33,4 +33,7 @@ describe("Day6", function () {
     it("day6 exA test gives 5", function () {
         expect(day6.exA(demo[0])).toBe(5);
     });
+    it("day6 exB test gives 4", function () {
+        expect(day6.exB(demo[0])).toBe(4);
+    });
 });

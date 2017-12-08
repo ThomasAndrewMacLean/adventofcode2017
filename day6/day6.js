@@ -12,7 +12,7 @@ class Day6 {
         let counter = 0;
         arr.forEach(a => {
             numArr.push(parseInt(a));
-            if (a > high) {
+            if (parseInt(a) > high) {
                 high = a;
                 highPlace = counter;
             }
@@ -41,8 +41,23 @@ class Day6 {
         return res;
     }
 
+    exB(inp) {
+        let res = 1;
+        let arch = [];
+        arch.push(inp.match(/\S+/g).join(' '));
+
+        let temp = this.distr(inp);
+
+        while (arch.indexOf(temp) === -1) {
+            arch.push(temp);
+            temp = this.distr(temp);
+            res++;
+        }
+        return res - arch.indexOf(temp);
+    }
+
 }
 // let d = new Day6();
-// let ress = d.exA(inputPuzzle);
+// let ress = d.exB(inputPuzzle);
 // console.log(ress);
 module.exports = Day6;
