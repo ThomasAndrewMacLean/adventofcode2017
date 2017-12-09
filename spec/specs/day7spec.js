@@ -45,7 +45,7 @@ describe('Day7', function () {
     it('day7 getweight should give 57', function () {
         expect(day7.getWeight('xhth (57)')).toBe(57);
     });
-    
+
     it('day7 getweight should give 12594', function () {
         expect(day7.getWeight('ybneks (12594) -> immqut, csprk, eyjif, oykud, bazfmo, nbmup, bxabcu      ')).toBe(12594);
     });
@@ -76,6 +76,10 @@ describe('Day7', function () {
 
     it('day7 getProgramsOnTop should be null', function () {
         expect(day7.getProgramsOnTop('xhth (57)')).toBeNull();
+    });
+
+    it('day7 exA gives tknk', function () {
+        expect(day7.exA(demo)).toBe('tknk');
     });
 
 
