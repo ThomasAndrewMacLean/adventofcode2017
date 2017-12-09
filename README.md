@@ -7,3 +7,5 @@ advent of code 2017
 
 
 Tests kan be run with: npm test
+
+Add new day : node helper
