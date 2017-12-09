@@ -1,5 +1,5 @@
 describe("Day4", function () {
-    let Validizer = require('../../day4/day4.js')
+    let Validizer = require('../../src/day4/day4.js')
 
     let val;
     beforeEach(function () {

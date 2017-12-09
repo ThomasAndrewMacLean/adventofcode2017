@@ -1,6 +1,6 @@
 describe("Day2", function () {
     // import CaptchaSolver from 'day1a'
-    var CheckSum = require('../../day2/day2.js')
+    var CheckSum = require('../../src/day2/day2.js')
 
     var cs;
     var testData;
@@ -8,9 +8,9 @@ describe("Day2", function () {
     beforeEach(function () {
         cs = new CheckSum();
         var fs = require('fs');
-        testData = fs.readFileSync('day2/testData.txt', 'utf8');
+        testData = fs.readFileSync('src/day2/testData.txt', 'utf8');
         cs.setData(testData)
-        testData2 = fs.readFileSync('day2/testData2.txt', 'utf8');
+        testData2 = fs.readFileSync('src/day2/testData2.txt', 'utf8');
     });
 
     it("getNumberOfRows should be 3", function () {

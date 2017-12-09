@@ -46,7 +46,7 @@ rl.question('Set to day :', (dayNumber) => {
   let launchTemplate = fs.readFileSync('./.vscode/launchtemplate.txt', 'utf8');
 
   launchTemplate = launchTemplate.replace('[[replaceMe]]',
-    '"program": "${workspaceFolder}/day' +
+    '"program": "${workspaceFolder}/src/day' +
     dayNumber + '/day' + dayNumber + '.js"')
 
   fs.writeFile('./.vscode/launch.json', launchTemplate)

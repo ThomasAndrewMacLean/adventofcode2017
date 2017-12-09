@@ -1,5 +1,5 @@
 describe("Day5", function () {
-    let Day5 = require('../../day5/day5.js')
+    let Day5 = require('../../src/day5/day5.js')
 
     let inp =
         `0

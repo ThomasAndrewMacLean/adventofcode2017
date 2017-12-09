@@ -1,5 +1,6 @@
+let Day6 = require('../../src/day6/day6.js')
+
 describe("Day6", function () {
-    let Day6 = require('../../day6/day6.js')
 
     let demo = [
         '0 2 7 0',

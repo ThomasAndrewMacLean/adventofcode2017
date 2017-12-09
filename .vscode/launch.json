@@ -7,7 +7,7 @@
         "type": "node",
         "request": "launch",
         "name": "Launch Program",
-        "program": "${workspaceFolder}/day7/day7.js"
+        "program": "${workspaceFolder}/src/day7/day7.js"
        
     }]
 }

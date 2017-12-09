@@ -87,17 +87,17 @@ class StepCounter {
 }
 
 
-const sc = new StepCounter();
-var answerA = sc.getDistance(368078);
-console.log('answer a: ' + answerA)
+// const sc = new StepCounter();
+// var answerA = sc.getDistance(368078);
+// console.log('answer a: ' + answerA)
 
 
-let answerB = 0;
-let countert = 1;
-while (answerB < 368078) {
-    answerB = sc.getResultB(countert);
-    countert++;
-}
+// let answerB = 0;
+// let countert = 1;
+// while (answerB < 368078) {
+//     answerB = sc.getResultB(countert);
+//     countert++;
+// }
 
-console.log('answer b: ' + answerB);
+// console.log('answer b: ' + answerB);
 module.exports = StepCounter;

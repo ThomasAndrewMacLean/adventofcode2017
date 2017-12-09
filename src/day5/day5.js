@@ -1,5 +1,5 @@
 var fs = require('fs');
-const inputPuzzle = fs.readFileSync('day5/input5.txt', 'utf8');
+const inputPuzzle = fs.readFileSync('src/day5/input5.txt', 'utf8');
 
 
 class Day5 {
