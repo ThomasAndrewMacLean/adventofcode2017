@@ -1,4 +1,4 @@
-var fs = require('fs');
+let fs = require('fs');
 const input = fs.readFileSync('src/day4/input4.txt', 'utf8');
 
 class Validizer {

@@ -1,4 +1,4 @@
-var fs = require('fs');
+let fs = require('fs');
 const inputPuzzle = fs.readFileSync('src/day6/input6.txt', 'utf8');
 
 

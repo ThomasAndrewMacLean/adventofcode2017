@@ -1,10 +1,10 @@
 describe('Day3', function () {
-    // import CaptchaSolver from 'day1a'
-  var StepCounter = require('../../src/day3/day3.js');
+  // import CaptchaSolver from 'day1a'
+  let StepCounter = require('../../src/day3/day3.js');
 
-  var cs;
-  var testData;
-  var testData2;
+  let cs;
+  let testData;
+  let testData2;
 
   beforeEach(function () {
     cs = new StepCounter();

@@ -1,8 +1,8 @@
 describe('Day1', function () {
-    // import CaptchaSolver from 'day1a'
-  var CaptchaSolver = require('../../src/day1/CaptchaSolver.js');
+  // import CaptchaSolver from 'day1a'
+  let CaptchaSolver = require('../../src/day1/CaptchaSolver.js');
 
-  var captchaSolver;
+  let captchaSolver;
 
   beforeEach(function () {
     captchaSolver = new CaptchaSolver('123456');

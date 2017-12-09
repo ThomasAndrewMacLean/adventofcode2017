@@ -1,4 +1,4 @@
-var fs = require('fs');
+let fs = require('fs');
 const inputPuzzle = fs.readFileSync('src/day5/input5.txt', 'utf8');
 
 
@@ -29,11 +29,11 @@ class Day5 {
             let temp = pos;
             pos += arr[pos];
             offset = arr[temp];
-           if(offset >= 3){
-            arr[temp] = arr[temp] - 1;
-           }else{
-               arr[temp] = arr[temp] + 1;
-           }
+            if (offset >= 3) {
+                arr[temp] = arr[temp] - 1;
+            } else {
+                arr[temp] = arr[temp] + 1;
+            }
 
             counter++;
         }
@@ -54,7 +54,7 @@ class Day5 {
 }
 
 let inp =
-`0
+    `0
 3
 0
 1

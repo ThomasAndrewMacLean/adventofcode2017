@@ -1,5 +1,5 @@
-var fs = require('fs');
-var cs = require('./CaptchaSolver.js');
+let fs = require('fs');
+let cs = require('./CaptchaSolver.js');
 const cont = fs.readFileSync('src/day1/input1a.txt', 'utf8');
 
 // var cs = new cs(cont);
