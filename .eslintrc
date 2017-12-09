@@ -8,6 +8,30 @@
 
     "rules": {
         "quotes": ["error", "single"],
-        "no-var": 2
+        "no-var": "error",
+        "eol-last": 1,
+        "eqeqeq": 2,
+        "curly": 2,
+        "no-alert": 2,
+        "radix": 2, // require use of the second argument for parseInt() (off by default)
+        "vars-on-top": 2,
+        "camelcase": 1,
+        "func-names": 0,
+        "new-cap": [1, {
+            "newIsCap": true,
+            "capIsNew": false
+        }],
+        "comma-spacing": [1, {
+            "before": false,
+            "after": true
+        }],
+        "indent": [2, 4],
+        "semi": [2, "always"],
+        "semi-spacing": [1, {
+            "before": false,
+            "after": true
+        }],
+
+        "newline-after-var": "error"
     }
 }

@@ -13,7 +13,7 @@ class Day7 {
     }
 
     getWeight(row) {
-        return parseInt(row.split('(')[1].split(')')[0]);
+        return parseInt(row.split('(')[1].split(')')[0], 10);
     }
 
     getName(row) {

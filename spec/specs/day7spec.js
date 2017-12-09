@@ -1,5 +1,7 @@
+'use strict';
+
 describe('Day7', function () {
-    let Day7 = require('../../src/day7/day7.js')
+    let Day7 = require('../../src/day7/day7.js');
 
     let demo =
         `   pbga (66)
@@ -14,7 +16,7 @@ describe('Day7', function () {
             jptl (61)
             ugml (68) -> gyxo, ebii, jptl
             gyxo (61)
-            cntj (57)`
+            cntj (57)`;
 
     let day7;
 
@@ -43,7 +45,7 @@ describe('Day7', function () {
     it('day7 getweight should give 57', function () {
         expect(day7.getWeight('xhth (57)')).toBe(57);
     });
-
+    
     it('day7 getweight should give 12594', function () {
         expect(day7.getWeight('ybneks (12594) -> immqut, csprk, eyjif, oykud, bazfmo, nbmup, bxabcu      ')).toBe(12594);
     });
