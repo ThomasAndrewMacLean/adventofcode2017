@@ -83,4 +83,23 @@ describe('Day7', function () {
     });
 
 
+
+
+    it('day7 has Children true', function () {
+        let o = {
+            id1: 'stuff',
+            id2: 'things',
+            id3: {
+                levelTwo1: null,
+                levelTwo2: null,
+                levelTwo3: null
+            }
+        };
+
+
+        expect(day7.hasChildren(o)).toBeTruthy();
+        expect(day7.hasChildren(o['id3'])).toBeFalsy();
+
+    });
+
 });

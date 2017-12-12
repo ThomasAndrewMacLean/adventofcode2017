@@ -22,20 +22,22 @@ class CheckSum {
     }
 
     getColumnsInRow(row) {
-        return row.match(/\S+/g) || []
+        return row.match(/\S+/g) || [];
     }
 
     getHighestNumberInRow(row) {
         let numbers = this.getColumnsInRow(row);
 
         let high = numbers.sort(sortNumber)[numbers.length - 1];
-        return parseInt(high);
+
+        return parseInt(high, 10);
     }
 
     getLowestNumberInRow(row) {
         let numbers = this.getColumnsInRow(row);
         let low = numbers.sort(sortNumber)[0];
-        return parseInt(low);
+
+        return parseInt(low, 10);
     }
 
     getDifference(row) {
@@ -51,7 +53,7 @@ class CheckSum {
             for (let m of numbers) {
                 c2++;
                 if (c1 !== c2 && n % m === 0) {
-                    return parseInt(n / m);
+                    return parseInt(n / m, 10);
                 }
             }
             c2 = 0;
@@ -63,8 +65,10 @@ class CheckSum {
 
     getCheckSum() {
         let result = 0;
+
         for (let i = 0; i < this.getNumberOfRows(); i++) {
             let row = this.getRow(i);
+
             result += this.getDifference(row);
         }
 
@@ -73,8 +77,10 @@ class CheckSum {
 
     getCheckSum2() {
         let result = 0;
+
         for (let i = 0; i < this.getNumberOfRows(); i++) {
             let row = this.getRow(i);
+
             result += this.evenlyDivisibleValues(row);
         }
 

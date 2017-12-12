@@ -14,9 +14,53 @@ class Day7 {
         let program = this.getProgram(inp);
         let weights = this.getObjectWithAllWeights(inp);
 
-        
 
+        this.replaceWeight(program, weights);
+        this.checkWeight(program);
+        //console.log(program);
 
+    }
+    replaceWeight(tree, weights) {
+        if (this.hasChildren(tree)) {
+            for (let c in tree) {
+                if (tree[c]) {
+
+                    this.replaceWeight(tree[c], weights);
+                }
+            }
+        }
+        for (let tak in tree) {
+            let gew = weights[tak];
+            let nieuw = tak + '-' + gew;
+
+            tree[nieuw] = tree[tak];
+            delete tree[tak];
+        }
+    }
+    checkWeight(tree) {
+        if (this.hasChildren(tree)) {
+            for (let c in tree) {
+                if (tree[c]) {
+
+                    this.checkWeight(tree[c]);
+                }
+            }
+        }
+        //  for (let tak in tree) {
+     //   console.log(tree);
+        for (let tak in tree) {
+         //   console.log(tak);
+          //  console.log(tree[tak]);
+        }
+        //  }
+    }
+    hasChildren(node) {
+        //  if(node){
+        let ob = Object.keys(node);
+
+        return node[Object.keys(node)[0]] !== null;
+
+        //}
     }
     replaceInChildren(tree, sleutel, obj, counter) {
         for (let tak in tree) {
@@ -115,8 +159,8 @@ let demo =
     gyxo (61)
     cntj (57)`;
 
-let result = d.exB(demo);
+let result = d.exB(inputPuzzle);
 
-console.log(result);
+//console.log(result);
 
 module.exports = Day7;
