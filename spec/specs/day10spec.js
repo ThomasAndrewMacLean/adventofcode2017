@@ -111,4 +111,8 @@ describe('Day10', function () {
 
     });
 
+    it('day10 convert to ascii', function () {
+        expect(day10.convert('1,2,3')).toBe('49,44,50,44,51,');
+    });
+
 });
