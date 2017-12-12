@@ -87,11 +87,11 @@ function* batch(seq, size) {
 }
 
 
-let day10 = new Day10(inputPuzzle, 256);
-let a = day10.asciLenghts();
+// let day10 = new Day10(inputPuzzle, 256);
+// let a = day10.asciLenghts();
 
-day10 = new Day10(a, 256);
-console.log(day10.exB());
+// day10 = new Day10(a, 256);
+// console.log(day10.exB());
 
 
 module.exports = Day10;
