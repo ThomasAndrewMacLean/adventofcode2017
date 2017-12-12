@@ -46,9 +46,9 @@ class Day9 {
 }
 
 
-let d = new Day9();
+// let d = new Day9();
 
-let res = d.exB(inputPuzzle);
+// let res = d.exB(inputPuzzle);
 
-console.log(res);
+// console.log(res);
 module.exports = Day9;

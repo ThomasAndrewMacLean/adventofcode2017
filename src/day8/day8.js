@@ -86,12 +86,12 @@ class Day8 {
 // c dec -10 if a >= 1
 // c inc -20 if c == 10`;
 
-let day8 = new Day8();
+// let day8 = new Day8();
 
-day8.reg = {};
-day8.high = 0;
-let te = day8.exB(inputPuzzle);
+// day8.reg = {};
+// day8.high = 0;
+// let te = day8.exB(inputPuzzle);
 
-console.log(te);
+// console.log(te);
 
 module.exports = Day8;
