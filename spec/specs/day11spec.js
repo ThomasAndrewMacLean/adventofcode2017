@@ -37,5 +37,9 @@ describe('Day11', function () {
         expect(day11.exA('se,sw,se,sw,sw')).toEqual(3);
     });
 
+    it('day11 exA 5', function () {
+        expect(day11.exA('n,n,n,se,ne')).toEqual(4);
+    });
+
 
 });

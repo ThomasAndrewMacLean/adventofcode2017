@@ -1,3 +1,4 @@
+//@ts-check
 'use strict';
 
 const fs = require('fs');
@@ -9,6 +10,7 @@ class Day11 {
     }
 
     getDistance() {
+        console.log(this.counter);
         return Math.max(...this.counter.map(c => Math.abs(c)));
     }
 
@@ -46,11 +48,11 @@ class Day11 {
         }
 
         return this.getDistance();
-
     }
-
-
-
 }
 
+const d = new Day11();
+const res = d.exA(inputPuzzle);
+
+console.log(res);
 module.exports = Day11;
